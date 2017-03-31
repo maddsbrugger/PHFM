@@ -1,0 +1,96 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+/***** Menu *******/
+
+#menu {
+	background: white;
+	height: 60px;
+	padding: 0 5px 0;
+	text-align: center;
+}
+
+ul {
+	list-style: none;
+}
+
+ul li {
+	display: inline-block;
+	width: 84px;
+	text-align: center;
+}
+
+ul li a {
+	color: black;
+	width: 100%;
+	line-height: 60px;
+	text-decoration: none;
+}
+
+ul li.selected {
+	background: #fff;
+}
+
+ul li.selected a {
+	color: #384047;
+}
+
+select {
+	width: 94%;
+	margin: 11px  0 11px 2%;
+	float: left;
+}
+
+/***** random styles *******/
+
+h1 img {
+	display: block;
+ 	margin: auto;
+ 	width: 40%;
+	padding-top: 20px;
+	padding-bottom: 25px;
+}
+
+p {
+	text-align: center;
+	color: black;
+	padding-top: 40px;
+	padding-left: 5%;
+	padding-right: 5%;
+	line-height: 1.5em;
+}
+
+/***** Sicky Footer will go here *******/
+
+/***** Responsive Design *******/
+
+@media (min-width: 320px) and (max-width: 568px) {
+  #menu ul {
+    display:none;
+  }
+
+	#menu select {
+			height: 40px;
+			font-size: 15px;
+	}
+}
+
+@media (min-width: 568px) {
+  #menu select, #menu button {
+    display:none;
+  }
+}
+
+
+/*** Want to have the logo on the left with the menu on the same line on the right  ***/
+@media only screen  and (min-width : 900px){
+		h1 img {
+			max-width: 15%;
+
+
+
+		}
+}
